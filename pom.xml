@@ -1,13 +1,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>appengine-awt</groupId>
+  <groupId>com.github.appengine-awt</groupId>
   <artifactId>appengine-awt</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <url>https://github.com/pascalleclercq/appengine-awt</url>
+  <licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
   <dependencies>
   	<dependency>
-  		<groupId>sfntly</groupId>
-  		<artifactId>sfntly</artifactId>
+  		<groupId>com.github.sfntly</groupId>
+		<artifactId>sfntly</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
+  <scm>
+  	<url>https://github.com/pascalleclercq/appengine-awt</url>
+  	<connection>https://github.com/pascalleclercq/appengine-awt.git</connection>
+  	<developerConnection>https://github.com/pascalleclercq/appengine-awt.git</developerConnection>
+  </scm>
 </project>
