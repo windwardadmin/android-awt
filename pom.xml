@@ -33,6 +33,7 @@
 		<developerConnection>https://github.com/pascalleclercq/appengine-awt.git</developerConnection>
 	</scm>
 	<build>
+		<defaultGoal>clean install</defaultGoal>
 		<plugins>
 			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
