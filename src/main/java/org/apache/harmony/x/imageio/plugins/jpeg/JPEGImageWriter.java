@@ -25,13 +25,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
+import org.apache.commons.imaging.ImageFormats;
 import org.apache.harmony.luni.util.NotImplementedException;
 import org.apache.harmony.x.imageio.internal.OutputStreamWrapper;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
-import org.apache.sanselan.ImageFormat;
-import org.apache.sanselan.ImageWriteException;
-import org.apache.sanselan.Sanselan;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.Imaging;
 
 import com.google.code.appengine.awt.color.ColorSpace;
 import com.google.code.appengine.awt.image.BufferedImage;
@@ -96,9 +95,9 @@ public class JPEGImageWriter extends ImageWriter {
         Map params = new HashMap();
         try {
         	
-			Sanselan.writeImage((BufferedImage)img,
+			Imaging.writeImage((BufferedImage)img,
 					wrapOutput(ios),//(OutputStream)ios,
-					ImageFormat.IMAGE_FORMAT_JPEG,
+					ImageFormats.JPEG,
 					params);
 		} catch (ImageWriteException e) {
 			// TODO Auto-generated catch block

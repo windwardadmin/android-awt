@@ -22,31 +22,20 @@ package com.google.code.appengine.imageio;
 import org.apache.harmony.luni.util.NotImplementedException;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Arrays;
 import java.util.List;
 import java.net.URL;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
-import org.apache.sanselan.ImageReadException;
-import org.apache.sanselan.Sanselan;
-import org.apache.sanselan.common.byteSources.ByteSource;
-import org.apache.sanselan.common.byteSources.ByteSourceInputStream;
-import org.apache.sanselan.formats.gif.GifImageParser;
-import org.apache.sanselan.formats.png.PngImageParser;
+import org.apache.commons.imaging.ImageReadException;
+import org.apache.commons.imaging.Imaging;
 
 import com.google.code.appengine.awt.image.BufferedImage;
 import com.google.code.appengine.awt.image.RenderedImage;
-import com.google.code.appengine.imageio.ImageReader;
-import com.google.code.appengine.imageio.ImageTranscoder;
-import com.google.code.appengine.imageio.ImageTypeSpecifier;
-import com.google.code.appengine.imageio.ImageWriter;
 import com.google.code.appengine.imageio.spi.*;
 import com.google.code.appengine.imageio.stream.ImageInputStream;
 import com.google.code.appengine.imageio.stream.ImageOutputStream;
@@ -338,7 +327,7 @@ public final class ImageIO {
         }*/
         	
         try {
-			return Sanselan.getBufferedImage(input);
+			return Imaging.getBufferedImage(input);
 		} catch (ImageReadException e) {
 			// TODO Auto-generated catch block
 			throw new IOException(e);
@@ -354,7 +343,7 @@ public final class ImageIO {
         }
         
         try {
-			return Sanselan.getBufferedImage(input);
+			return Imaging.getBufferedImage(input);
 		} catch (ImageReadException e) {
 			// TODO Auto-generated catch block
 			throw new IOException(e);

@@ -26,13 +26,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
+import org.apache.commons.imaging.ImageFormats;
 import org.apache.harmony.luni.util.NotImplementedException;
 import org.apache.harmony.x.imageio.internal.OutputStreamWrapper;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
-import org.apache.sanselan.ImageFormat;
-import org.apache.sanselan.ImageWriteException;
-import org.apache.sanselan.Sanselan;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.Imaging;
 
 import com.google.code.appengine.awt.image.BufferedImage;
 import com.google.code.appengine.awt.image.RenderedImage;
@@ -109,9 +108,9 @@ public class PNGImageWriter extends ImageWriter {
 
         try {
         	Map params = new HashMap();
-        	Sanselan.writeImage((BufferedImage) image,
+        	Imaging.writeImage((BufferedImage) image,
         			wrapOutput(getOutput()),
-        			ImageFormat.IMAGE_FORMAT_PNG,
+        			ImageFormats.PNG,
         			params);
         }
         catch (ImageWriteException e) {
