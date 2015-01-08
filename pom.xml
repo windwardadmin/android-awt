@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.appengine-awt</groupId>
-	<artifactId>appengine-awt</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<url>https://github.com/pascalleclercq/appengine-awt</url>
+	<groupId>net.windward.android-awt</groupId>
+	<artifactId>android-awt</artifactId>
+	<version>1.0.0</version>
+	<url>https://github.com/windwardadmin/android-awt</url>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -28,9 +28,9 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<url>https://github.com/pascalleclercq/appengine-awt</url>
-		<connection>https://github.com/pascalleclercq/appengine-awt.git</connection>
-		<developerConnection>https://github.com/pascalleclercq/appengine-awt.git</developerConnection>
+		<url>https://github.com/windwardadmin/android-awt</url>
+		<connection>https://github.com/windwardadmin/android-awt.git</connection>
+		<developerConnection>https://github.com/windwardadmin/android-awt.git</developerConnection>
 	</scm>
 	<build>
 		<defaultGoal>clean install</defaultGoal>
@@ -62,6 +62,16 @@
 					<instructions>
 						<_snapshot>${osgi-version-qualifier}</_snapshot>
 					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<outputDirectory>target</outputDirectory>
+					<finalName>android-awt-1.0.0</finalName>
+					<attach>false</attach>
 				</configuration>
 			</plugin>
 		</plugins>

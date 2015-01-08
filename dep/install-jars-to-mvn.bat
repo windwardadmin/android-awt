@@ -1,0 +1,1 @@
+call mvn install:install-file -Dfile=sfntly-0.0.1-SNAPSHOT.jar -DgroupId=com.github.sfntly -DartifactId=sfntly -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
