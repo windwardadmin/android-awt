@@ -19,18 +19,17 @@
  */
 package org.apache.harmony.awt.gl.color;
 
-import java.util.ArrayList;
-
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentSampleModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.SampleModel;
+import net.windward.android.awt.image.SinglePixelPackedSampleModel;
 import org.apache.harmony.awt.gl.AwtImageBackdoorAccessor;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ComponentSampleModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.SampleModel;
-import com.google.code.appengine.awt.image.SinglePixelPackedSampleModel;
+import java.util.ArrayList;
 
 
 

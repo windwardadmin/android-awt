@@ -17,7 +17,7 @@
 
 package org.apache.commons.imaging.common;
 
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.image.BufferedImage;
 
 public class RgbBufferedImageFactory implements IBufferedImageFactory {
     public BufferedImage getColorBufferedImage(final int width, final int height,

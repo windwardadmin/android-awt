@@ -20,10 +20,10 @@
 
 package org.apache.harmony.awt.gl.font;
 
-import com.google.code.appengine.awt.Graphics2D;
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.font.TextHitInfo;
-import com.google.code.appengine.awt.geom.Rectangle2D;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.TextHitInfo;
+import net.windward.android.awt.geom.Rectangle2D;
 
 /**
  * Abstract class which represents the segment of the text with constant attributes

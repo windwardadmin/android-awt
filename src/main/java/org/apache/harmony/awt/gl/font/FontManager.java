@@ -19,6 +19,11 @@
  */
 package org.apache.harmony.awt.gl.font;
 
+import net.windward.android.awt.Font;
+import net.windward.android.awt.font.sfntly.SfntlyFontPeer;
+import net.windward.android.awt.peer.FontPeer;
+import org.apache.harmony.awt.Utils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -28,13 +33,6 @@ import java.util.Hashtable;
 import java.util.Locale;
 import java.util.Properties;
 import java.util.Vector;
-
-import org.apache.harmony.awt.Utils;
-import org.apache.harmony.awt.gl.CommonGraphics2DFactory;
-
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.font.sfntly.SfntlyFontPeer;
-import com.google.code.appengine.awt.peer.FontPeer;
 
 
 public class FontManager {
@@ -390,7 +388,7 @@ public class FontManager {
      * Returns new physical font peer for the parameters specified using font properties
      * This method must be overridden by subclasses implementations.
      *  
-     * @param faceName face name or family name of the font 
+     * @param name face name or family name of the font
      * @param style style of the font 
      * @param size font size
      * 

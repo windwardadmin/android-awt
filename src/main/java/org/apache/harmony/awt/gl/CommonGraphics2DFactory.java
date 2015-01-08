@@ -19,12 +19,11 @@
  */
 package org.apache.harmony.awt.gl;
 
-import java.io.IOException;
-
+import net.windward.android.awt.Font;
+import net.windward.android.awt.peer.FontPeer;
 import org.apache.harmony.awt.wtk.GraphicsFactory;
 
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.peer.FontPeer;
+import java.io.IOException;
 
 
 /**

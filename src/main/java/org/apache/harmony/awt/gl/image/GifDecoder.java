@@ -17,16 +17,16 @@
 
 package org.apache.harmony.awt.gl.image;
 
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ImageConsumer;
+import net.windward.android.awt.image.IndexColorModel;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.List;
-
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ImageConsumer;
-import com.google.code.appengine.awt.image.IndexColorModel;
 
 
 public class GifDecoder extends ImageDecoder {

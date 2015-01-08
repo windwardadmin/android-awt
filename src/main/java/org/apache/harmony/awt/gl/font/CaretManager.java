@@ -23,14 +23,13 @@
 package org.apache.harmony.awt.gl.font;
 
 
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.TextHitInfo;
+import net.windward.android.awt.font.TextLayout;
+import net.windward.android.awt.geom.GeneralPath;
+import net.windward.android.awt.geom.Line2D;
+import net.windward.android.awt.geom.Rectangle2D;
 import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.*;
-import com.google.code.appengine.awt.font.TextHitInfo;
-import com.google.code.appengine.awt.font.TextLayout;
-import com.google.code.appengine.awt.geom.GeneralPath;
-import com.google.code.appengine.awt.geom.Line2D;
-import com.google.code.appengine.awt.geom.Rectangle2D;
 
 
 /**

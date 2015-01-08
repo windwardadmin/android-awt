@@ -21,11 +21,11 @@
  */
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Color;
-import com.google.code.appengine.awt.Composite;
-import com.google.code.appengine.awt.CompositeContext;
-import com.google.code.appengine.awt.RenderingHints;
-import com.google.code.appengine.awt.image.ColorModel;
+import net.windward.android.awt.Color;
+import net.windward.android.awt.Composite;
+import net.windward.android.awt.CompositeContext;
+import net.windward.android.awt.RenderingHints;
+import net.windward.android.awt.image.ColorModel;
 
 public class XORComposite implements Composite {
 

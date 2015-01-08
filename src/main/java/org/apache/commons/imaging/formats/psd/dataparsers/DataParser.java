@@ -16,9 +16,8 @@
  */
 package org.apache.commons.imaging.formats.psd.dataparsers;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.DataBuffer;
-
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.DataBuffer;
 import org.apache.commons.imaging.formats.psd.ImageContents;
 import org.apache.commons.imaging.formats.psd.PsdHeaderInfo;
 

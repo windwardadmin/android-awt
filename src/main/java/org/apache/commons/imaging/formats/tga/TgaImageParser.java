@@ -18,8 +18,8 @@ package org.apache.commons.imaging.formats.tga;
 // */
 //package org.apache.commons.imaging.formats.tga;
 //
-//import com.google.code.appengine.awt.Dimension;
-//import com.google.code.appengine.awt.image.BufferedImage;
+//import Dimension;
+//import BufferedImage;
 //import java.io.File;
 //import java.io.IOException;
 //import java.io.InputStream;

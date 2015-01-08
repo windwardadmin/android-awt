@@ -20,9 +20,8 @@
 package org.apache.harmony.awt.gl.font;
 
 
+import net.windward.android.awt.font.LineMetrics;
 import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.font.LineMetrics;
 
 
 /**

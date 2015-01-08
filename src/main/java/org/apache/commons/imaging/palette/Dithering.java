@@ -16,8 +16,7 @@
  */
 package org.apache.commons.imaging.palette;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageWriteException;
 
 /**

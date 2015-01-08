@@ -1,9 +1,9 @@
 package org.apache.harmony.x.imageio.internal;
 
+import net.windward.android.imageio.stream.ImageOutputStream;
+
 import java.io.IOException;
 import java.io.OutputStream;
-
-import com.google.code.appengine.imageio.stream.ImageOutputStream;
 
 public class OutputStreamWrapper extends OutputStream {
 	

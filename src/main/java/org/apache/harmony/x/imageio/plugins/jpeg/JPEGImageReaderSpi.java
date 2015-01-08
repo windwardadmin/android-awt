@@ -19,17 +19,14 @@
  */
 package org.apache.harmony.x.imageio.plugins.jpeg;
 
-import java.io.IOException;
-import java.util.Locale;
-
-
-
+import net.windward.android.imageio.ImageReader;
+import net.windward.android.imageio.spi.ImageReaderSpi;
 import org.apache.harmony.x.imageio.plugins.ImageSignature;
 import org.apache.harmony.x.imageio.plugins.ImageType;
 import org.apache.harmony.x.imageio.plugins.PluginUtils;
 
-import com.google.code.appengine.imageio.ImageReader;
-import com.google.code.appengine.imageio.spi.ImageReaderSpi;
+import java.io.IOException;
+import java.util.Locale;
 
 public class JPEGImageReaderSpi extends ImageReaderSpi {
 

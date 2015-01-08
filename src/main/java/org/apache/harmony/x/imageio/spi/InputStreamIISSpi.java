@@ -19,17 +19,16 @@
 package org.apache.harmony.x.imageio.spi;
 
 
-import java.io.OutputStream;
+import net.windward.android.imageio.spi.ImageInputStreamSpi;
+import net.windward.android.imageio.stream.FileCacheImageInputStream;
+import net.windward.android.imageio.stream.ImageInputStream;
+import net.windward.android.imageio.stream.MemoryCacheImageInputStream;
+import org.apache.harmony.x.imageio.internal.nls.Messages;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Locale;
-
-
-import org.apache.harmony.x.imageio.internal.nls.Messages;
-
-import com.google.code.appengine.imageio.spi.ImageInputStreamSpi;
-import com.google.code.appengine.imageio.stream.*;
 
 public class InputStreamIISSpi  extends ImageInputStreamSpi {
     private static final String vendor = "Apache";

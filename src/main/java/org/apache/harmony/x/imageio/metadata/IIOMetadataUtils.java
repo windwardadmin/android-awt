@@ -18,15 +18,13 @@
 
 package org.apache.harmony.x.imageio.metadata;
 
+import net.windward.android.imageio.metadata.IIOMetadataFormat;
+import net.windward.android.imageio.metadata.IIOMetadataFormatImpl;
+import org.apache.harmony.x.imageio.internal.nls.Messages;
+
 import java.lang.reflect.Method;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
-
-
-import org.apache.harmony.x.imageio.internal.nls.Messages;
-
-import com.google.code.appengine.imageio.metadata.IIOMetadataFormat;
-import com.google.code.appengine.imageio.metadata.IIOMetadataFormatImpl;
 
 public class IIOMetadataUtils {
     private IIOMetadataUtils() {} 

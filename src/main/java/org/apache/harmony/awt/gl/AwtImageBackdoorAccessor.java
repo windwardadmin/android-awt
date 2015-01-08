@@ -24,12 +24,11 @@
 package org.apache.harmony.awt.gl;
 
 
+import net.windward.android.awt.Image;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DataBufferInt;
+import net.windward.android.awt.image.IndexColorModel;
 import org.apache.harmony.awt.gl.image.DataBufferListener;
-
-import com.google.code.appengine.awt.Image;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DataBufferInt;
-import com.google.code.appengine.awt.image.IndexColorModel;
 
 
 /**

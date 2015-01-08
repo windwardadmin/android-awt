@@ -16,12 +16,12 @@
  */
 package org.apache.commons.imaging.formats.pnm;
 
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.image.BufferedImage;
+import org.apache.commons.imaging.ImageWriteException;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
-
-import org.apache.commons.imaging.ImageWriteException;
 
 abstract class PnmWriter {
     protected final boolean rawbits;

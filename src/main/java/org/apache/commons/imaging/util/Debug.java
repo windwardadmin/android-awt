@@ -16,7 +16,8 @@
  */
 package org.apache.commons.imaging.util;
 
-import com.google.code.appengine.awt.color.ICC_Profile;
+import net.windward.android.awt.color.ICC_Profile;
+
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

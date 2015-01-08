@@ -16,20 +16,8 @@
  */
 package org.apache.commons.imaging.formats.jpeg;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteOrder;
-import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageFormat;
 import org.apache.commons.imaging.ImageFormats;
 import org.apache.commons.imaging.ImageInfo;
@@ -57,8 +45,21 @@ import org.apache.commons.imaging.formats.tiff.TiffImageParser;
 import org.apache.commons.imaging.formats.tiff.constants.TiffTagConstants;
 import org.apache.commons.imaging.util.Debug;
 
-import static org.apache.commons.imaging.ImagingConstants.*;
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteOrder;
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_READ_THUMBNAILS;
+import static org.apache.commons.imaging.common.BinaryFunctions.remainingBytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.startsWith;
 
 public class JpegImageParser extends ImageParser {
     private static final String DEFAULT_EXTENSION = ".jpg";

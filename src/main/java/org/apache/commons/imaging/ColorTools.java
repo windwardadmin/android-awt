@@ -17,17 +17,18 @@
 
 package org.apache.commons.imaging;
 
-import com.google.code.appengine.awt.RenderingHints;
-import com.google.code.appengine.awt.Transparency;
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.color.ICC_ColorSpace;
-import com.google.code.appengine.awt.color.ICC_Profile;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorConvertOp;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ComponentColorModel;
-import com.google.code.appengine.awt.image.DirectColorModel;
-import com.google.code.appengine.awt.image.ImagingOpException;
+import net.windward.android.awt.RenderingHints;
+import net.windward.android.awt.Transparency;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.color.ICC_ColorSpace;
+import net.windward.android.awt.color.ICC_Profile;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorConvertOp;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentColorModel;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.ImagingOpException;
+
 import java.io.File;
 import java.io.IOException;
 

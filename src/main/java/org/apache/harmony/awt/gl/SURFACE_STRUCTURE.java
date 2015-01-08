@@ -3,9 +3,9 @@
  */
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Transparency;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.DataBuffer;
+import net.windward.android.awt.Transparency;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.DataBuffer;
 
 public class SURFACE_STRUCTURE
 {

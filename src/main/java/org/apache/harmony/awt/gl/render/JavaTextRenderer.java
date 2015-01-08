@@ -20,20 +20,19 @@
 package org.apache.harmony.awt.gl.render;
 
 
-
-
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.font.GlyphMetrics;
+import net.windward.android.awt.font.GlyphVector;
+import net.windward.android.awt.geom.AffineTransform;
+import net.windward.android.awt.geom.Point2D;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.TextRenderer;
 import org.apache.harmony.awt.gl.font.CommonGlyphVector;
 import org.apache.harmony.awt.gl.font.FontPeerImpl;
 import org.apache.harmony.awt.gl.font.Glyph;
 import org.apache.harmony.awt.gl.image.BufferedImageGraphics2D;
-
-import com.google.code.appengine.awt.*;
-import com.google.code.appengine.awt.font.GlyphMetrics;
-import com.google.code.appengine.awt.font.GlyphVector;
-import com.google.code.appengine.awt.geom.AffineTransform;
-import com.google.code.appengine.awt.geom.Point2D;
-import com.google.code.appengine.awt.image.*;
 
 
 public class JavaTextRenderer extends TextRenderer {

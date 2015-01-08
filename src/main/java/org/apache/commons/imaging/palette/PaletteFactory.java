@@ -16,17 +16,17 @@
  */
 package org.apache.commons.imaging.palette;
 
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import org.apache.commons.imaging.ImageWriteException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.apache.commons.imaging.ImageWriteException;
 
 /**
  * Factory for creating palettes.

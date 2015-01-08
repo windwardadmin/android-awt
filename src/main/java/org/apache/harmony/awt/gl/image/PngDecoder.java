@@ -22,15 +22,19 @@
 
 package org.apache.harmony.awt.gl.image;
 
+import net.windward.android.awt.Transparency;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.ImageConsumer;
+import net.windward.android.awt.image.IndexColorModel;
+import org.apache.harmony.awt.internal.nls.Messages;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Hashtable;
-
-import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.*;
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.*;
 
 
 public class PngDecoder extends ImageDecoder {

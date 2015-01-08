@@ -16,18 +16,10 @@
  */
 package org.apache.commons.imaging.formats.jpeg;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.imageio.ImageIO;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.Imaging;
-import org.apache.commons.imaging.ImagingException;
 import org.apache.commons.imaging.common.IImageMetadata;
 import org.apache.commons.imaging.formats.tiff.JpegImageData;
 import org.apache.commons.imaging.formats.tiff.TiffField;
@@ -35,6 +27,10 @@ import org.apache.commons.imaging.formats.tiff.TiffImageData;
 import org.apache.commons.imaging.formats.tiff.TiffImageMetadata;
 import org.apache.commons.imaging.formats.tiff.taginfos.TagInfo;
 import org.apache.commons.imaging.util.Debug;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JpegImageMetadata implements IImageMetadata {
     private final JpegPhotoshopMetadata photoshop;

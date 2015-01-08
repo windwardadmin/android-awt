@@ -20,11 +20,10 @@
 package org.apache.harmony.awt.gl.render;
 
 
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.geom.PathIterator;
 import org.apache.harmony.awt.gl.MultiRectArea;
 import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.geom.PathIterator;
 
 
 public class JavaShapeRasterizer {

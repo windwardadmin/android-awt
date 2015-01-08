@@ -16,11 +16,11 @@
  */
 package org.apache.commons.imaging.formats.bmp;
 
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.image.BufferedImage;
+import org.apache.commons.imaging.common.BinaryOutputStream;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-
-import org.apache.commons.imaging.common.BinaryOutputStream;
 
 class BmpWriterRgb extends BmpWriter {
     // private final boolean alpha;

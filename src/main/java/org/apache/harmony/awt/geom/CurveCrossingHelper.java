@@ -16,11 +16,11 @@
  */
 package org.apache.harmony.awt.geom;
 
+import net.windward.android.awt.geom.PathIterator;
+
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ArrayList;
-
-import com.google.code.appengine.awt.geom.PathIterator;
 
 
 

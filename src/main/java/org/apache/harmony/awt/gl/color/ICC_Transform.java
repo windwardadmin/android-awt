@@ -20,9 +20,7 @@
 package org.apache.harmony.awt.gl.color;
 
 
-import org.apache.harmony.awt.gl.color.NativeCMM;
-
-import com.google.code.appengine.awt.color.ICC_Profile;
+import net.windward.android.awt.color.ICC_Profile;
 
 
 /**

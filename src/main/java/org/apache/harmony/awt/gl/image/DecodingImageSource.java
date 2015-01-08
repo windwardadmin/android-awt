@@ -22,14 +22,14 @@
  */
 package org.apache.harmony.awt.gl.image;
 
+import net.windward.android.awt.image.ImageConsumer;
+import net.windward.android.awt.image.ImageProducer;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.code.appengine.awt.image.ImageConsumer;
-import com.google.code.appengine.awt.image.ImageProducer;
 
 
 /**

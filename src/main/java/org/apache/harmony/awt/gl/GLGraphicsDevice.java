@@ -19,8 +19,8 @@
  */
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.GraphicsDevice;
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.GraphicsDevice;
 
 /**
  * GLGraphicsDevice is a super class for all GraphicsDevice implementations

@@ -23,12 +23,12 @@
  */
 package org.apache.harmony.awt.gl.image;
 
-import com.google.code.appengine.awt.Point;
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.SampleModel;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.Point;
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.SampleModel;
+import net.windward.android.awt.image.WritableRaster;
 
 public class OrdinaryWritableRaster extends WritableRaster {
 

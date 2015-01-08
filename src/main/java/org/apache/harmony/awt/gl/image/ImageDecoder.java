@@ -22,6 +22,9 @@
  */
 package org.apache.harmony.awt.gl.image;
 
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ImageConsumer;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,9 +32,6 @@ import java.util.ConcurrentModificationException;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ImageConsumer;
 
 
 /**

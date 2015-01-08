@@ -16,13 +16,13 @@
  */
 package org.apache.commons.imaging.formats.png;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.formats.png.chunks.PngChunkPlte;
 import org.apache.commons.imaging.formats.png.transparencyfilters.TransparencyFilter;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 class ScanExpediterInterlaced extends ScanExpediter {
     private static final int[] STARTING_ROW = { 0, 0, 4, 0, 2, 0, 1 };

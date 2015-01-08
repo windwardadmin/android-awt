@@ -23,16 +23,23 @@ package org.apache.harmony.awt.gl.font;
 
 // XXX - TODO - bidi not implemented yet
 //import java.text.Bidi;
-import java.util.Arrays;
 
+import net.windward.android.awt.Font;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.FontRenderContext;
+import net.windward.android.awt.font.GlyphJustificationInfo;
+import net.windward.android.awt.font.GlyphVector;
+import net.windward.android.awt.font.GraphicAttribute;
+import net.windward.android.awt.font.LineMetrics;
+import net.windward.android.awt.font.TextHitInfo;
+import net.windward.android.awt.geom.AffineTransform;
+import net.windward.android.awt.geom.GeneralPath;
+import net.windward.android.awt.geom.Point2D;
+import net.windward.android.awt.geom.Rectangle2D;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.*;
-import com.google.code.appengine.awt.font.*;
-import com.google.code.appengine.awt.geom.AffineTransform;
-import com.google.code.appengine.awt.geom.GeneralPath;
-import com.google.code.appengine.awt.geom.Point2D;
-import com.google.code.appengine.awt.geom.Rectangle2D;
+import java.util.Arrays;
 
 
 /**

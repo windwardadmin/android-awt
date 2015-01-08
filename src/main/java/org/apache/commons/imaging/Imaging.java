@@ -16,9 +16,18 @@
  */
 package org.apache.commons.imaging;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.color.ICC_Profile;
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.color.ICC_Profile;
+import net.windward.android.awt.image.BufferedImage;
+import org.apache.commons.imaging.common.IImageMetadata;
+import org.apache.commons.imaging.common.bytesource.ByteSource;
+import org.apache.commons.imaging.common.bytesource.ByteSourceArray;
+import org.apache.commons.imaging.common.bytesource.ByteSourceFile;
+import org.apache.commons.imaging.common.bytesource.ByteSourceInputStream;
+import org.apache.commons.imaging.icc.IccProfileInfo;
+import org.apache.commons.imaging.icc.IccProfileParser;
+import org.apache.commons.imaging.util.IoUtils;
+
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -31,16 +40,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import org.apache.commons.imaging.common.IImageMetadata;
-import org.apache.commons.imaging.common.bytesource.ByteSource;
-import org.apache.commons.imaging.common.bytesource.ByteSourceArray;
-import org.apache.commons.imaging.common.bytesource.ByteSourceFile;
-import org.apache.commons.imaging.common.bytesource.ByteSourceInputStream;
-import org.apache.commons.imaging.icc.IccProfileInfo;
-import org.apache.commons.imaging.icc.IccProfileParser;
-import org.apache.commons.imaging.util.IoUtils;
-
-import static org.apache.commons.imaging.ImagingConstants.*;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FILENAME;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FORMAT;
 
 /**
  * The primary application programming interface (API) to the Imaging library.

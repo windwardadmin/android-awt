@@ -16,18 +16,8 @@
  */
 package org.apache.commons.imaging;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.common.BinaryFileParser;
 import org.apache.commons.imaging.common.IBufferedImageFactory;
 import org.apache.commons.imaging.common.IImageMetadata;
@@ -50,6 +40,16 @@ import org.apache.commons.imaging.formats.tiff.TiffImageParser;
 import org.apache.commons.imaging.formats.wbmp.WbmpImageParser;
 import org.apache.commons.imaging.formats.xbm.XbmImageParser;
 import org.apache.commons.imaging.formats.xpm.XpmImageParser;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * Provides the abstract base class for all image reading and writing

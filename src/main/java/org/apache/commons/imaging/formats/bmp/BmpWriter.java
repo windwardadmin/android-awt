@@ -16,10 +16,10 @@
  */
 package org.apache.commons.imaging.formats.bmp;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.common.BinaryOutputStream;
+
+import java.io.IOException;
 
 abstract class BmpWriter {
 

@@ -15,14 +15,25 @@
 
 package org.apache.commons.imaging.formats.xbm;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DataBufferByte;
-import com.google.code.appengine.awt.image.IndexColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DataBufferByte;
+import net.windward.android.awt.image.IndexColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
+import org.apache.commons.imaging.ImageFormat;
+import org.apache.commons.imaging.ImageFormats;
+import org.apache.commons.imaging.ImageInfo;
+import org.apache.commons.imaging.ImageParser;
+import org.apache.commons.imaging.ImageReadException;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.common.BasicCParser;
+import org.apache.commons.imaging.common.IImageMetadata;
+import org.apache.commons.imaging.common.bytesource.ByteSource;
+import org.apache.commons.imaging.util.IoUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -36,18 +47,7 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.UUID;
 
-import org.apache.commons.imaging.ImageFormat;
-import org.apache.commons.imaging.ImageFormats;
-import org.apache.commons.imaging.ImageInfo;
-import org.apache.commons.imaging.ImageParser;
-import org.apache.commons.imaging.ImageReadException;
-import org.apache.commons.imaging.ImageWriteException;
-import org.apache.commons.imaging.common.BasicCParser;
-import org.apache.commons.imaging.common.IImageMetadata;
-import org.apache.commons.imaging.common.bytesource.ByteSource;
-import org.apache.commons.imaging.util.IoUtils;
-
-import static org.apache.commons.imaging.ImagingConstants.*;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FORMAT;
 
 public class XbmImageParser extends ImageParser {
     private static final String DEFAULT_EXTENSION = ".xbm";

@@ -23,30 +23,29 @@
  */
 package org.apache.harmony.awt.gl.image;
 
-import java.util.ConcurrentModificationException;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Vector;
-
+import net.windward.android.awt.Graphics;
+import net.windward.android.awt.Image;
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DataBufferByte;
+import net.windward.android.awt.image.DataBufferInt;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.ImageConsumer;
+import net.windward.android.awt.image.ImageObserver;
+import net.windward.android.awt.image.ImageProducer;
+import net.windward.android.awt.image.IndexColorModel;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.AwtImageBackdoorAccessor;
 import org.apache.harmony.awt.gl.ImageSurface;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.Graphics;
-import com.google.code.appengine.awt.Image;
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ComponentColorModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DataBufferByte;
-import com.google.code.appengine.awt.image.DataBufferInt;
-import com.google.code.appengine.awt.image.DirectColorModel;
-import com.google.code.appengine.awt.image.ImageConsumer;
-import com.google.code.appengine.awt.image.ImageObserver;
-import com.google.code.appengine.awt.image.ImageProducer;
-import com.google.code.appengine.awt.image.IndexColorModel;
-import com.google.code.appengine.awt.image.WritableRaster;
+import java.util.ConcurrentModificationException;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Vector;
 
 
 

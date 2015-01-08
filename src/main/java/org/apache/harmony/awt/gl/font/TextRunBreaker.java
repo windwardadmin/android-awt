@@ -22,6 +22,20 @@
 package org.apache.harmony.awt.gl.font;
 
 
+import net.windward.android.awt.Font;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.FontRenderContext;
+import net.windward.android.awt.font.GlyphJustificationInfo;
+import net.windward.android.awt.font.GraphicAttribute;
+import net.windward.android.awt.font.TextAttribute;
+import net.windward.android.awt.font.TextHitInfo;
+import net.windward.android.awt.geom.GeneralPath;
+import net.windward.android.awt.geom.Rectangle2D;
+import org.apache.harmony.awt.gl.font.TextDecorator.Decoration;
+import org.apache.harmony.awt.internal.nls.Messages;
+import org.apache.harmony.misc.HashCode;
+
 import java.text.Annotation;
 import java.text.AttributedCharacterIterator;
 import java.text.AttributedCharacterIterator.Attribute;
@@ -30,21 +44,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import org.apache.harmony.awt.gl.font.TextDecorator.Decoration;
-import org.apache.harmony.awt.internal.nls.Messages;
-import org.apache.harmony.misc.HashCode;
-
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.Graphics2D;
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.font.FontRenderContext;
-import com.google.code.appengine.awt.font.GlyphJustificationInfo;
-import com.google.code.appengine.awt.font.GraphicAttribute;
-import com.google.code.appengine.awt.font.TextAttribute;
-import com.google.code.appengine.awt.font.TextHitInfo;
-import com.google.code.appengine.awt.geom.GeneralPath;
-import com.google.code.appengine.awt.geom.Rectangle2D;
 
 
 /**

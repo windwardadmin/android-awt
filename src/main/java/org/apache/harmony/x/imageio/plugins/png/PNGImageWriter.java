@@ -19,29 +19,26 @@
  */
 package org.apache.harmony.x.imageio.plugins.png;
 
-import java.io.File;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.RenderedImage;
+import net.windward.android.imageio.IIOImage;
+import net.windward.android.imageio.ImageTypeSpecifier;
+import net.windward.android.imageio.ImageWriteParam;
+import net.windward.android.imageio.ImageWriter;
+import net.windward.android.imageio.metadata.IIOMetadata;
+import net.windward.android.imageio.spi.ImageWriterSpi;
+import net.windward.android.imageio.stream.ImageOutputStream;
+import org.apache.commons.imaging.ImageFormats;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.Imaging;
+import org.apache.harmony.luni.util.NotImplementedException;
+import org.apache.harmony.x.imageio.internal.OutputStreamWrapper;
+import org.apache.harmony.x.imageio.internal.nls.Messages;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
-
-
-import org.apache.commons.imaging.ImageFormats;
-import org.apache.harmony.luni.util.NotImplementedException;
-import org.apache.harmony.x.imageio.internal.OutputStreamWrapper;
-import org.apache.harmony.x.imageio.internal.nls.Messages;
-import org.apache.commons.imaging.ImageWriteException;
-import org.apache.commons.imaging.Imaging;
-
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.RenderedImage;
-import com.google.code.appengine.imageio.IIOImage;
-import com.google.code.appengine.imageio.ImageTypeSpecifier;
-import com.google.code.appengine.imageio.ImageWriteParam;
-import com.google.code.appengine.imageio.ImageWriter;
-import com.google.code.appengine.imageio.metadata.IIOMetadata;
-import com.google.code.appengine.imageio.spi.ImageWriterSpi;
-import com.google.code.appengine.imageio.stream.ImageOutputStream;
 
 
 public class PNGImageWriter extends ImageWriter {

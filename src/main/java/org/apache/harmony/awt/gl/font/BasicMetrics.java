@@ -21,9 +21,9 @@
 
 package org.apache.harmony.awt.gl.font;
 
-import com.google.code.appengine.awt.*;
-import com.google.code.appengine.awt.font.GraphicAttribute;
-import com.google.code.appengine.awt.font.LineMetrics;
+import net.windward.android.awt.Font;
+import net.windward.android.awt.font.GraphicAttribute;
+import net.windward.android.awt.font.LineMetrics;
 
 /**
  * Date: May 14, 2005

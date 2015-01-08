@@ -15,17 +15,12 @@
 
 package org.apache.commons.imaging.formats.jpeg.decoder;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DirectColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Properties;
-
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.common.BinaryFileParser;
 import org.apache.commons.imaging.common.bytesource.ByteSource;
@@ -36,7 +31,13 @@ import org.apache.commons.imaging.formats.jpeg.segments.DqtSegment;
 import org.apache.commons.imaging.formats.jpeg.segments.SofnSegment;
 import org.apache.commons.imaging.formats.jpeg.segments.SosSegment;
 
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Properties;
+
+import static org.apache.commons.imaging.common.BinaryFunctions.read2Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
 
 public class JpegDecoder extends BinaryFileParser implements JpegUtils.Visitor {
     /*

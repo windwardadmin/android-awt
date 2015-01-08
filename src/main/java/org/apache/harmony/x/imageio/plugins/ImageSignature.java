@@ -16,14 +16,11 @@
  */
 package org.apache.harmony.x.imageio.plugins;
 
-import java.io.IOException;
-import java.util.Arrays;
-
-
-
+import net.windward.android.imageio.stream.ImageInputStream;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import com.google.code.appengine.imageio.stream.ImageInputStream;
+import java.io.IOException;
+import java.util.Arrays;
 
 public enum ImageSignature {
         JPEG(new byte[] { (byte) 0xFF, (byte) 0xD8, (byte) 0xFF }),

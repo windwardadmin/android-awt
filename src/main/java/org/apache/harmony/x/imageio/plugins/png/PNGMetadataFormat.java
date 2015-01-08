@@ -17,11 +17,11 @@
 
 package org.apache.harmony.x.imageio.plugins.png;
 
-import java.util.Arrays;
+import net.windward.android.imageio.ImageTypeSpecifier;
+import net.windward.android.imageio.metadata.IIOMetadataFormat;
+import net.windward.android.imageio.metadata.IIOMetadataFormatImpl;
 
-import com.google.code.appengine.imageio.ImageTypeSpecifier;
-import com.google.code.appengine.imageio.metadata.IIOMetadataFormat;
-import com.google.code.appengine.imageio.metadata.IIOMetadataFormatImpl;
+import java.util.Arrays;
 
 
 public class PNGMetadataFormat extends IIOMetadataFormatImpl {

@@ -19,11 +19,11 @@
  */
 package org.apache.harmony.awt.gl.color;
 
+import net.windward.android.awt.color.ICC_Profile;
+
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.HashMap;
-
-import com.google.code.appengine.awt.color.ICC_Profile;
 
 
 /**

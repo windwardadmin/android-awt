@@ -15,20 +15,20 @@
 
 package org.apache.commons.imaging.formats.pcx;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.ByteOrder;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageWriteException;
 import org.apache.commons.imaging.ImagingConstants;
 import org.apache.commons.imaging.PixelDensity;
 import org.apache.commons.imaging.common.BinaryOutputStream;
 import org.apache.commons.imaging.palette.PaletteFactory;
 import org.apache.commons.imaging.palette.SimplePalette;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.ByteOrder;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 class PcxWriter {
     private int encoding;

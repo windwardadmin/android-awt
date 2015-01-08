@@ -20,9 +20,7 @@
 package org.apache.harmony.awt.gl;
 
 
-import org.apache.harmony.awt.gl.Surface;
-
-import com.google.code.appengine.awt.image.*;
+import net.windward.android.awt.image.VolatileImage;
 
 
 public abstract class GLVolatileImage extends VolatileImage {

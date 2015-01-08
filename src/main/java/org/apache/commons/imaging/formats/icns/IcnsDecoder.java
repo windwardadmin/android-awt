@@ -16,13 +16,13 @@
  */
 package org.apache.commons.imaging.formats.icns;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.List;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.common.ImageBuilder;
 import org.apache.commons.imaging.formats.icns.IcnsImageParser.IcnsElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 final class IcnsDecoder {
     private static final int[] PALETTE_4BPP = { 0xffffffff, 0xfffcf305,

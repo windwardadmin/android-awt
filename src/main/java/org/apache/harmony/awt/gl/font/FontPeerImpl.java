@@ -20,16 +20,15 @@
 package org.apache.harmony.awt.gl.font;
 
 
-import java.util.ArrayList;
-import java.util.Locale;
-
+import net.windward.android.awt.font.FontRenderContext;
+import net.windward.android.awt.font.LineMetrics;
+import net.windward.android.awt.geom.AffineTransform;
+import net.windward.android.awt.geom.Rectangle2D;
+import net.windward.android.awt.peer.FontPeer;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.font.FontRenderContext;
-import com.google.code.appengine.awt.font.LineMetrics;
-import com.google.code.appengine.awt.geom.AffineTransform;
-import com.google.code.appengine.awt.geom.Rectangle2D;
-import com.google.code.appengine.awt.peer.FontPeer;
+import java.util.ArrayList;
+import java.util.Locale;
 
 
 /**

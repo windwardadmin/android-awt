@@ -16,18 +16,8 @@
  */
 package org.apache.commons.imaging.formats.psd;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageFormat;
 import org.apache.commons.imaging.ImageFormats;
 import org.apache.commons.imaging.ImageInfo;
@@ -47,7 +37,22 @@ import org.apache.commons.imaging.formats.psd.datareaders.DataReader;
 import org.apache.commons.imaging.formats.psd.datareaders.UncompressedDataReader;
 import org.apache.commons.imaging.util.IoUtils;
 
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.commons.imaging.common.BinaryFunctions.read2Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.read4Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.readAndVerifyBytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.readByte;
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.skipBytes;
 
 public class PsdImageParser extends ImageParser {
     private static final String DEFAULT_EXTENSION = ".psd";

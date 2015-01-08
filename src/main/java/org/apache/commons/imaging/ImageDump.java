@@ -16,11 +16,10 @@
  */
 package org.apache.commons.imaging;
 
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.color.ICC_ColorSpace;
-import com.google.code.appengine.awt.color.ICC_Profile;
-import com.google.code.appengine.awt.image.BufferedImage;
-
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.color.ICC_ColorSpace;
+import net.windward.android.awt.color.ICC_Profile;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.icc.IccProfileInfo;
 import org.apache.commons.imaging.icc.IccProfileParser;
 

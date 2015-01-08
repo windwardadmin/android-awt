@@ -20,15 +20,13 @@
 package org.apache.harmony.awt.gl;
 
 
-import org.apache.harmony.awt.gl.ImageSurface;
+import net.windward.android.awt.Composite;
+import net.windward.android.awt.CompositeContext;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.render.JavaBlitter;
 import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.Composite;
-import com.google.code.appengine.awt.CompositeContext;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
 
 
 

@@ -15,22 +15,13 @@
 
 package org.apache.commons.imaging.formats.wbmp;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DataBufferByte;
-import com.google.code.appengine.awt.image.IndexColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DataBufferByte;
+import net.windward.android.awt.image.IndexColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.commons.imaging.ImageFormat;
 import org.apache.commons.imaging.ImageFormats;
 import org.apache.commons.imaging.ImageInfo;
@@ -41,8 +32,18 @@ import org.apache.commons.imaging.common.IImageMetadata;
 import org.apache.commons.imaging.common.bytesource.ByteSource;
 import org.apache.commons.imaging.util.IoUtils;
 
-import static org.apache.commons.imaging.ImagingConstants.*;
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FORMAT;
+import static org.apache.commons.imaging.common.BinaryFunctions.readByte;
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
 
 public class WbmpImageParser extends ImageParser {
     private static final String DEFAULT_EXTENSION = ".wbmp";

@@ -19,12 +19,12 @@
  */
 package org.apache.harmony.awt.gl.color;
 
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.color.ICC_Profile;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.SampleModel;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.color.ICC_Profile;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.SampleModel;
+import net.windward.android.awt.image.WritableRaster;
 
 /**
  * This class provides functionality for scaling color data when

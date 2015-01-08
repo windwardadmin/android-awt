@@ -19,17 +19,16 @@
  */
 package org.apache.harmony.awt.gl;
 
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
-
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.geom.AffineTransform;
+import net.windward.android.awt.geom.PathIterator;
+import net.windward.android.awt.geom.Point2D;
+import net.windward.android.awt.geom.Rectangle2D;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.geom.AffineTransform;
-import com.google.code.appengine.awt.geom.PathIterator;
-import com.google.code.appengine.awt.geom.Point2D;
-import com.google.code.appengine.awt.geom.Rectangle2D;
+import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 
 public class MultiRectArea implements Shape {

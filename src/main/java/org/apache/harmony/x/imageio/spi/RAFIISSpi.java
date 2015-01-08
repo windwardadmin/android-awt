@@ -19,17 +19,15 @@
  */
 package org.apache.harmony.x.imageio.spi;
 
+import net.windward.android.imageio.spi.ImageInputStreamSpi;
+import net.windward.android.imageio.stream.FileImageInputStream;
+import net.windward.android.imageio.stream.ImageInputStream;
+import org.apache.harmony.x.imageio.internal.nls.Messages;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Locale;
-
-
-import org.apache.harmony.x.imageio.internal.nls.Messages;
-
-import com.google.code.appengine.imageio.spi.ImageInputStreamSpi;
-import com.google.code.appengine.imageio.stream.FileImageInputStream;
-import com.google.code.appengine.imageio.stream.ImageInputStream;
 
 public class RAFIISSpi extends ImageInputStreamSpi {
     private static final String vendor = "Apache";

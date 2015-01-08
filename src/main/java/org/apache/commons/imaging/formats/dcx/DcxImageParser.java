@@ -16,18 +16,8 @@
  */
 package org.apache.commons.imaging.formats.dcx;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageFormat;
 import org.apache.commons.imaging.ImageFormats;
 import org.apache.commons.imaging.ImageInfo;
@@ -43,8 +33,19 @@ import org.apache.commons.imaging.formats.pcx.PcxConstants;
 import org.apache.commons.imaging.formats.pcx.PcxImageParser;
 import org.apache.commons.imaging.util.IoUtils;
 
-import static org.apache.commons.imaging.ImagingConstants.*;
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FORMAT;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_PIXEL_DENSITY;
+import static org.apache.commons.imaging.common.BinaryFunctions.read4Bytes;
 
 public class DcxImageParser extends ImageParser {
     // See http://www.fileformat.info/format/pcx/egff.htm for documentation

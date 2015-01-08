@@ -16,19 +16,8 @@
  */
 package org.apache.commons.imaging.formats.bmp;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.FormatCompliance;
 import org.apache.commons.imaging.ImageFormat;
 import org.apache.commons.imaging.ImageFormats;
@@ -45,8 +34,25 @@ import org.apache.commons.imaging.palette.PaletteFactory;
 import org.apache.commons.imaging.palette.SimplePalette;
 import org.apache.commons.imaging.util.IoUtils;
 
-import static org.apache.commons.imaging.ImagingConstants.*;
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.commons.imaging.ImagingConstants.BUFFERED_IMAGE_FACTORY;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_FORMAT;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_PIXEL_DENSITY;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_VERBOSE;
+import static org.apache.commons.imaging.common.BinaryFunctions.read2Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.read4Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.readByte;
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
 
 public class BmpImageParser extends ImageParser {
     private static final String DEFAULT_EXTENSION = ".bmp";

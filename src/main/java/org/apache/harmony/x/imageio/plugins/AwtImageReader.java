@@ -16,27 +16,24 @@
  */
 package org.apache.harmony.x.imageio.plugins;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.Iterator;
-
-
-
+import net.windward.android.awt.Image;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ImageObserver;
+import net.windward.android.imageio.ImageReadParam;
+import net.windward.android.imageio.ImageReader;
+import net.windward.android.imageio.ImageTypeSpecifier;
+import net.windward.android.imageio.metadata.IIOMetadata;
+import net.windward.android.imageio.spi.ImageReaderSpi;
+import net.windward.android.imageio.stream.ImageInputStream;
 import org.apache.harmony.awt.gl.image.DecodingImageSource;
 import org.apache.harmony.awt.gl.image.OffscreenImage;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import com.google.code.appengine.awt.Image;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ImageObserver;
-import com.google.code.appengine.imageio.ImageReadParam;
-import com.google.code.appengine.imageio.ImageReader;
-import com.google.code.appengine.imageio.ImageTypeSpecifier;
-import com.google.code.appengine.imageio.metadata.IIOMetadata;
-import com.google.code.appengine.imageio.spi.ImageReaderSpi;
-import com.google.code.appengine.imageio.stream.ImageInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Iterator;
 
 
 /**

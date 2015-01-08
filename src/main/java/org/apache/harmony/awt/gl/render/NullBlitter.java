@@ -22,12 +22,11 @@
 package org.apache.harmony.awt.gl.render;
 
 
+import net.windward.android.awt.Color;
+import net.windward.android.awt.Composite;
+import net.windward.android.awt.geom.AffineTransform;
 import org.apache.harmony.awt.gl.MultiRectArea;
 import org.apache.harmony.awt.gl.Surface;
-
-import com.google.code.appengine.awt.Color;
-import com.google.code.appengine.awt.Composite;
-import com.google.code.appengine.awt.geom.AffineTransform;
 
 
 

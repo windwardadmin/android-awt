@@ -20,18 +20,17 @@
 package org.apache.harmony.awt.gl.image;
 
 
+import net.windward.android.awt.Graphics;
+import net.windward.android.awt.GraphicsConfiguration;
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.GlyphVector;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.CommonGraphics2D;
 import org.apache.harmony.awt.gl.Surface;
 import org.apache.harmony.awt.gl.render.JavaBlitter;
-
-import com.google.code.appengine.awt.Graphics;
-import com.google.code.appengine.awt.GraphicsConfiguration;
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.font.GlyphVector;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.WritableRaster;
 
 
 /**

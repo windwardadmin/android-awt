@@ -22,15 +22,14 @@
 package org.apache.harmony.awt.gl;
 
 
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.color.LUTColorConverter;
 import org.apache.harmony.awt.gl.image.DataBufferListener;
 import org.apache.harmony.awt.internal.nls.Messages;
-
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.WritableRaster;
 
 
 

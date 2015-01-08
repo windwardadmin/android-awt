@@ -21,24 +21,23 @@
  */
 package org.apache.harmony.awt.gl;
 
-import java.util.ArrayList;
-
+import net.windward.android.awt.Image;
+import net.windward.android.awt.Rectangle;
+import net.windward.android.awt.Transparency;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentColorModel;
+import net.windward.android.awt.image.ComponentSampleModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.IndexColorModel;
+import net.windward.android.awt.image.MultiPixelPackedSampleModel;
+import net.windward.android.awt.image.SampleModel;
+import net.windward.android.awt.image.WritableRaster;
 import org.apache.harmony.awt.gl.color.LUTColorConverter;
 
-import com.google.code.appengine.awt.Image;
-import com.google.code.appengine.awt.Rectangle;
-import com.google.code.appengine.awt.Transparency;
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ComponentColorModel;
-import com.google.code.appengine.awt.image.ComponentSampleModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DirectColorModel;
-import com.google.code.appengine.awt.image.IndexColorModel;
-import com.google.code.appengine.awt.image.MultiPixelPackedSampleModel;
-import com.google.code.appengine.awt.image.SampleModel;
-import com.google.code.appengine.awt.image.WritableRaster;
+import java.util.ArrayList;
 
 
 

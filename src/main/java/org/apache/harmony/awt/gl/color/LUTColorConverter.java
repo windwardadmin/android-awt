@@ -23,7 +23,7 @@
  */
 package org.apache.harmony.awt.gl.color;
 
-import com.google.code.appengine.awt.color.ColorSpace;
+import net.windward.android.awt.color.ColorSpace;
 
 public class LUTColorConverter {
 

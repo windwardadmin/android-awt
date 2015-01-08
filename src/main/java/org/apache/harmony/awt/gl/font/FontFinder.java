@@ -22,11 +22,11 @@
 
 package org.apache.harmony.awt.gl.font;
 
+import net.windward.android.awt.Font;
+import net.windward.android.awt.GraphicsEnvironment;
+
 import java.util.List;
 import java.util.Map;
-
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.GraphicsEnvironment;
 
 
 /**

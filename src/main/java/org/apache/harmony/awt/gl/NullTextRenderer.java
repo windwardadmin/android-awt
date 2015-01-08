@@ -1,7 +1,7 @@
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Graphics2D;
-import com.google.code.appengine.awt.font.GlyphVector;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.font.GlyphVector;
 
 public class NullTextRenderer extends TextRenderer {
 

@@ -16,17 +16,27 @@
  */
 package org.apache.commons.imaging.formats.pcx;
 
-import com.google.code.appengine.awt.Dimension;
-import com.google.code.appengine.awt.Transparency;
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.ComponentColorModel;
-import com.google.code.appengine.awt.image.DataBuffer;
-import com.google.code.appengine.awt.image.DataBufferByte;
-import com.google.code.appengine.awt.image.IndexColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.Dimension;
+import net.windward.android.awt.Transparency;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.ComponentColorModel;
+import net.windward.android.awt.image.DataBuffer;
+import net.windward.android.awt.image.DataBufferByte;
+import net.windward.android.awt.image.IndexColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
+import org.apache.commons.imaging.ImageFormat;
+import org.apache.commons.imaging.ImageFormats;
+import org.apache.commons.imaging.ImageInfo;
+import org.apache.commons.imaging.ImageParser;
+import org.apache.commons.imaging.ImageReadException;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.common.IImageMetadata;
+import org.apache.commons.imaging.common.bytesource.ByteSource;
+import org.apache.commons.imaging.util.IoUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -38,19 +48,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.commons.imaging.ImageFormat;
-import org.apache.commons.imaging.ImageFormats;
-import org.apache.commons.imaging.ImageInfo;
-import org.apache.commons.imaging.ImageParser;
-import org.apache.commons.imaging.ImageReadException;
-import org.apache.commons.imaging.ImageWriteException;
-import org.apache.commons.imaging.common.IImageMetadata;
-import org.apache.commons.imaging.common.bytesource.ByteSource;
-import org.apache.commons.imaging.util.IoUtils;
-
-import static org.apache.commons.imaging.ImagingConstants.*;
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
-import static org.apache.commons.imaging.common.ByteConversions.*;
+import static org.apache.commons.imaging.ImagingConstants.PARAM_KEY_STRICT;
+import static org.apache.commons.imaging.common.BinaryFunctions.readByte;
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.skipBytes;
+import static org.apache.commons.imaging.common.ByteConversions.toUInt16;
 
 public class PcxImageParser extends ImageParser {
     // ZSoft's official spec is at http://www.qzx.com/pc-gpe/pcx.txt

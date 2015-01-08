@@ -19,10 +19,10 @@
  */
 package org.apache.harmony.awt.gl.font;
 
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.font.GlyphJustificationInfo;
-import com.google.code.appengine.awt.font.GlyphMetrics;
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.font.GlyphJustificationInfo;
+import net.windward.android.awt.font.GlyphMetrics;
+import net.windward.android.awt.image.BufferedImage;
 
 public abstract class Glyph{
 

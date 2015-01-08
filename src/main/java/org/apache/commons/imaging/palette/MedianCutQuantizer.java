@@ -16,14 +16,14 @@
  */
 package org.apache.commons.imaging.palette;
 
-import com.google.code.appengine.awt.image.BufferedImage;
+import net.windward.android.awt.image.BufferedImage;
+import org.apache.commons.imaging.ImageWriteException;
+import org.apache.commons.imaging.util.Debug;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.commons.imaging.ImageWriteException;
-import org.apache.commons.imaging.util.Debug;
 
 public class MedianCutQuantizer {
     private final boolean ignoreAlpha;

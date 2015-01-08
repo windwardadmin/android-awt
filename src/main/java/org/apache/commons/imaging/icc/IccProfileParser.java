@@ -16,12 +16,7 @@
  */
 package org.apache.commons.imaging.icc;
 
-import com.google.code.appengine.awt.color.ICC_Profile;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteOrder;
-
+import net.windward.android.awt.color.ICC_Profile;
 import org.apache.commons.imaging.common.BinaryFileParser;
 import org.apache.commons.imaging.common.bytesource.ByteSource;
 import org.apache.commons.imaging.common.bytesource.ByteSourceArray;
@@ -29,7 +24,14 @@ import org.apache.commons.imaging.common.bytesource.ByteSourceFile;
 import org.apache.commons.imaging.util.Debug;
 import org.apache.commons.imaging.util.IoUtils;
 
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteOrder;
+
+import static org.apache.commons.imaging.common.BinaryFunctions.printCharQuad;
+import static org.apache.commons.imaging.common.BinaryFunctions.read4Bytes;
+import static org.apache.commons.imaging.common.BinaryFunctions.skipBytes;
 
 public class IccProfileParser extends BinaryFileParser {
     public IccProfileParser() {

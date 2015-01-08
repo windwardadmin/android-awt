@@ -16,10 +16,10 @@
  */
 package org.apache.harmony.x.imageio.plugins;
 
+import net.windward.android.imageio.stream.ImageInputStream;
+
 import java.io.IOException;
 import java.io.InputStream;
-
-import com.google.code.appengine.imageio.stream.ImageInputStream;
 
 
 public class PluginUtils {

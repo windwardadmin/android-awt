@@ -19,8 +19,8 @@
  */
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.geom.PathIterator;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.geom.PathIterator;
 
 public class Crossing {
 

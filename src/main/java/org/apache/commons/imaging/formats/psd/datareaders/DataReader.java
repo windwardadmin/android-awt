@@ -16,14 +16,14 @@
  */
 package org.apache.commons.imaging.formats.psd.datareaders;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.common.BinaryFileParser;
 import org.apache.commons.imaging.formats.psd.ImageContents;
 import org.apache.commons.imaging.formats.psd.dataparsers.DataParser;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public abstract class DataReader {
     protected final DataParser dataParser;

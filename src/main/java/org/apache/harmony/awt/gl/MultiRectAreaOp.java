@@ -19,7 +19,7 @@
  */
 package org.apache.harmony.awt.gl;
 
-import com.google.code.appengine.awt.Rectangle;
+import net.windward.android.awt.Rectangle;
 
 public class MultiRectAreaOp {
 

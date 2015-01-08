@@ -17,12 +17,10 @@
 package org.apache.harmony.x.imageio.plugins.jpeg;
 
 
-
+import net.windward.android.imageio.ImageReadParam;
+import net.windward.android.imageio.plugins.jpeg.JPEGImageReadParam;
+import net.windward.android.imageio.spi.ImageReaderSpi;
 import org.apache.harmony.x.imageio.plugins.AwtImageReader;
-
-import com.google.code.appengine.imageio.ImageReadParam;
-import com.google.code.appengine.imageio.plugins.jpeg.JPEGImageReadParam;
-import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 public class JPEGImageReader extends AwtImageReader {
 

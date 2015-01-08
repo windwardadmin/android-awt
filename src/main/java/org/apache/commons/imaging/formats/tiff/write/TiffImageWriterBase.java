@@ -16,17 +16,7 @@
  */
 package org.apache.commons.imaging.formats.tiff.write;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageWriteException;
 import org.apache.commons.imaging.PixelDensity;
 import org.apache.commons.imaging.common.BinaryOutputStream;
@@ -39,7 +29,36 @@ import org.apache.commons.imaging.formats.tiff.TiffImageData;
 import org.apache.commons.imaging.formats.tiff.constants.ExifTagConstants;
 import org.apache.commons.imaging.formats.tiff.constants.TiffTagConstants;
 
-import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.*;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.DEFAULT_TIFF_BYTE_ORDER;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.DIRECTORY_TYPE_EXIF;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.DIRECTORY_TYPE_GPS;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.DIRECTORY_TYPE_INTEROPERABILITY;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.DIRECTORY_TYPE_ROOT;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_COMPRESSION;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_EXIF;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_FORMAT;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_PIXEL_DENSITY;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_T4_OPTIONS;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_T6_OPTIONS;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.PARAM_KEY_XMP_XML;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_CCITT_1D;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_CCITT_GROUP_3;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_CCITT_GROUP_4;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_LZW;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_PACKBITS;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_COMPRESSION_UNCOMPRESSED;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_FLAG_T6_OPTIONS_UNCOMPRESSED_MODE;
+import static org.apache.commons.imaging.formats.tiff.constants.TiffConstants.TIFF_HEADER_SIZE;
 
 public abstract class TiffImageWriterBase {
 

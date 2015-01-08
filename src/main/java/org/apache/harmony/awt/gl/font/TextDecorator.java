@@ -20,19 +20,19 @@
 
 package org.apache.harmony.awt.gl.font;
 
+import net.windward.android.awt.BasicStroke;
+import net.windward.android.awt.Color;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.Paint;
+import net.windward.android.awt.Shape;
+import net.windward.android.awt.Stroke;
+import net.windward.android.awt.font.TextAttribute;
+import net.windward.android.awt.geom.Area;
+import net.windward.android.awt.geom.Line2D;
+import net.windward.android.awt.geom.Rectangle2D;
+
 import java.text.AttributedCharacterIterator.Attribute;
 import java.util.Map;
-
-import com.google.code.appengine.awt.BasicStroke;
-import com.google.code.appengine.awt.Color;
-import com.google.code.appengine.awt.Graphics2D;
-import com.google.code.appengine.awt.Paint;
-import com.google.code.appengine.awt.Shape;
-import com.google.code.appengine.awt.Stroke;
-import com.google.code.appengine.awt.font.TextAttribute;
-import com.google.code.appengine.awt.geom.Area;
-import com.google.code.appengine.awt.geom.Line2D;
-import com.google.code.appengine.awt.geom.Rectangle2D;
 
 
 /**

@@ -19,18 +19,17 @@
  */
 package org.apache.harmony.awt.gl;
 
-import java.util.ArrayList;
-import java.util.Locale;
-
+import net.windward.android.awt.Font;
+import net.windward.android.awt.Graphics2D;
+import net.windward.android.awt.GraphicsDevice;
+import net.windward.android.awt.GraphicsEnvironment;
+import net.windward.android.awt.HeadlessException;
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.harmony.awt.gl.font.FontManager;
 import org.apache.harmony.awt.gl.image.BufferedImageGraphics2D;
 
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.Graphics2D;
-import com.google.code.appengine.awt.GraphicsDevice;
-import com.google.code.appengine.awt.GraphicsEnvironment;
-import com.google.code.appengine.awt.HeadlessException;
-import com.google.code.appengine.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.Locale;
 
 
 /**

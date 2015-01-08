@@ -16,10 +16,7 @@
  */
 package org.apache.commons.imaging.formats.png;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.formats.png.chunks.PngChunkPlte;
 import org.apache.commons.imaging.formats.png.scanlinefilters.ScanlineFilter;
@@ -30,7 +27,10 @@ import org.apache.commons.imaging.formats.png.scanlinefilters.ScanlineFilterSub;
 import org.apache.commons.imaging.formats.png.scanlinefilters.ScanlineFilterUp;
 import org.apache.commons.imaging.formats.png.transparencyfilters.TransparencyFilter;
 
-import static org.apache.commons.imaging.common.BinaryFunctions.*;
+import java.io.IOException;
+import java.io.InputStream;
+
+import static org.apache.commons.imaging.common.BinaryFunctions.readBytes;
 
 abstract class ScanExpediter {
     protected final int width;

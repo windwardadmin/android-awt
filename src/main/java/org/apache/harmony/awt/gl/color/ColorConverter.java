@@ -19,11 +19,11 @@
  */
 package org.apache.harmony.awt.gl.color;
 
-import com.google.code.appengine.awt.color.ColorSpace;
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.color.ColorSpace;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.WritableRaster;
 
 /**
  * This class combines ColorScaler, ICC_Transform and NativeImageFormat functionality

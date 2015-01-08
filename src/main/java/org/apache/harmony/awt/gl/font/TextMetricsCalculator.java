@@ -21,14 +21,13 @@
 
 package org.apache.harmony.awt.gl.font;
 
-import java.util.HashMap;
-import java.util.ArrayList;
-
+import net.windward.android.awt.Font;
+import net.windward.android.awt.font.GraphicAttribute;
+import net.windward.android.awt.font.LineMetrics;
 import org.apache.harmony.awt.internal.nls.Messages;
 
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.font.GraphicAttribute;
-import com.google.code.appengine.awt.font.LineMetrics;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 /**

@@ -18,10 +18,8 @@
 package org.apache.harmony.x.imageio.plugins.png;
 
 
-
+import net.windward.android.imageio.spi.ImageReaderSpi;
 import org.apache.harmony.x.imageio.plugins.AwtImageReader;
-
-import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 public class PNGImageReader extends AwtImageReader {
 

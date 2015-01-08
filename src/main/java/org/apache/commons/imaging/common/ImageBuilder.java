@@ -40,13 +40,14 @@
  */
 package org.apache.commons.imaging.common;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import com.google.code.appengine.awt.image.ColorModel;
-import com.google.code.appengine.awt.image.DataBufferInt;
-import com.google.code.appengine.awt.image.DirectColorModel;
-import com.google.code.appengine.awt.image.Raster;
-import com.google.code.appengine.awt.image.RasterFormatException;
-import com.google.code.appengine.awt.image.WritableRaster;
+import net.windward.android.awt.image.BufferedImage;
+import net.windward.android.awt.image.ColorModel;
+import net.windward.android.awt.image.DataBufferInt;
+import net.windward.android.awt.image.DirectColorModel;
+import net.windward.android.awt.image.Raster;
+import net.windward.android.awt.image.RasterFormatException;
+import net.windward.android.awt.image.WritableRaster;
+
 import java.util.Properties;
 
 /**

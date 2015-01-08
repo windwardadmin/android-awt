@@ -16,14 +16,7 @@
  */
 package org.apache.commons.imaging.formats.tiff;
 
-import com.google.code.appengine.awt.image.BufferedImage;
-import java.io.IOException;
-import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.Map;
-
+import net.windward.android.awt.image.BufferedImage;
 import org.apache.commons.imaging.ImageReadException;
 import org.apache.commons.imaging.ImageWriteException;
 import org.apache.commons.imaging.common.ImageMetadata;
@@ -50,6 +43,13 @@ import org.apache.commons.imaging.formats.tiff.taginfos.TagInfoXpString;
 import org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory;
 import org.apache.commons.imaging.formats.tiff.write.TiffOutputField;
 import org.apache.commons.imaging.formats.tiff.write.TiffOutputSet;
+
+import java.io.IOException;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
 
 public class TiffImageMetadata extends ImageMetadata {
     public final TiffContents contents;

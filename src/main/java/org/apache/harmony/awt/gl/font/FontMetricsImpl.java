@@ -19,9 +19,9 @@
  */
 package org.apache.harmony.awt.gl.font;
 
-import com.google.code.appengine.awt.Font;
-import com.google.code.appengine.awt.FontMetrics;
-import com.google.code.appengine.awt.geom.AffineTransform;
+import net.windward.android.awt.Font;
+import net.windward.android.awt.FontMetrics;
+import net.windward.android.awt.geom.AffineTransform;
 
 /**
  *  FontMetrics implementation
